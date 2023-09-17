@@ -14,6 +14,10 @@ app.get('/produto', (req, res) => {
   res.render('produto', { message: 'Olá, kjyuoyiu!' });
 });
 
+app.get('/teste', (req, res) => {
+  res.render('teste', { message: 'Olá, kjyuoyiu!' });
+});
+
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });

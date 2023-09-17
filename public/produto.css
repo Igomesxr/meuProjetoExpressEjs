@@ -9,6 +9,7 @@ body {
 
 header{
     background-color: black;
+    
 }
 
 .logo{
@@ -21,8 +22,9 @@ header{
     display: flex;
     justify-content: space-around;
     padding: 40px 0px;
-    flex-wrap: wrap;
 }
+
+
 
 .produto{
     background-color: rgb(214, 212, 212);
