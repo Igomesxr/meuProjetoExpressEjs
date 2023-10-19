@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+const produto = [
+  {id: 1, nome: "nome do produto", preco: "320", descricao: "descrição do produto", imagens: "produto.jpg"}
+]
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));

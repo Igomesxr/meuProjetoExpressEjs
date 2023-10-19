@@ -9,6 +9,14 @@ body {
 
 header{
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+header h1{
+    font-family: Georgia, serif;
+    color: #f0f0f0;
 }
 
 .logo{
@@ -26,8 +34,8 @@ header{
 
 .produto{
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgb(69, 69, 69);
+    border-radius: 5px;    
+    box-shadow: 0 2px 5px rgb(92, 92, 92);
     height: 400px;   
     margin: 10px;
     cursor: pointer;
