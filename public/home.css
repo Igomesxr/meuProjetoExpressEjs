@@ -30,16 +30,17 @@ header h1{
     justify-content: space-around;
     padding: 40px 0px;
     flex-wrap: wrap;
+    
 }
 
 .produto{
     background-color: #fff;
     border-radius: 5px;    
     box-shadow: 0 2px 5px rgb(92, 92, 92);
-    height: 400px;   
+    height: 400px;     
     margin: 10px;
     cursor: pointer;
-    transition: transform 0.3s ease;   
+    transition: transform 0.3s ease;  
 }
 
 .produto:hover{
@@ -58,7 +59,7 @@ header h1{
     font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
     text-align: center;
-
+    
 }
 
 .produto h1{
@@ -80,3 +81,11 @@ header h1{
     margin-top: 15px;
 }
 
+footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    color: #f0f0f0;
+}   

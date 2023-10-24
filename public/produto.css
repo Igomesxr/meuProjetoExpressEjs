@@ -9,7 +9,16 @@ body {
 
 header{
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+    
+header h1{
+    font-family: Georgia, serif;
+    color: #f0f0f0;
 }
+
 
 .logo{
     width: 15vh;
