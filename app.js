@@ -3,7 +3,18 @@ const app = express();
 const port = 3000;
 
 const produto = [
-  {id: 1, nome: "nome do produto", preco: "320", descricao: "descrição do produto", imagens: "produto.jpg"}
+  {id: 1, nome: "Camisa Nike Preta", preco: "R$ 320", descricao: "Camisa bem boa", imagens: "/imagens/camisa_preta.webp"},
+  {id: 2, nome: "Camisa Nike Vinho", preco: "R$ 220", descricao: "Camisa bem boa", imagens: "/imagens/camisa_vinho.webp"},
+  {id: 3, nome: "Camisa Nike Azul", preco: "R$ 220", descricao: "Camisa bem boa", imagens: "/imagens/camisa_azul.webp"},
+  {id: 4, nome: "Camisa Nike Branca", preco: "R$ 450", descricao: "Camisa bem boa", imagens: "/imagens/camisa_branca.webp"},
+  {id: 5, nome: "Camisa Nike Branca", preco: "R$ 450", descricao: "Camisa bem boa", imagens: "/imagens/camisa_branca.webp"},
+  {id: 6, nome: "Camisa Nike Azul", preco: "R$ 220", descricao: "Camisa bem boa", imagens: "/imagens/camisa_azul.webp"},
+  {id: 7, nome: "Camisa Nike Vinho", preco: "R$ 220", descricao: "Camisa bem boa", imagens: "/imagens/camisa_vinho.webp"},
+  {id: 8, nome: "Camisa Nike Preta", preco: "R$ 320", descricao: "Camisa bem boa", imagens: "/imagens/camisa_preta.webp"},
+  {id: 9, nome: "Camisa Nike Vinho", preco: "R$ 220", descricao: "Camisa bem boa", imagens: "/imagens/camisa_vinho.webp"},
+  {id: 10, nome: "Camisa Nike Azul", preco: "R$ 220", descricao: "Camisa bem boa", imagens: "/imagens/camisa_azul.webp"},
+  {id: 11, nome: "Camisa Nike Branca", preco: "R$ 450", descricao: "Camisa bem boa", imagens: "/imagens/camisa_branca.webp"},
+  {id: 12, nome: "Camisa Nike Preta", preco: "R$ 320", descricao: "Camisa bem boa", imagens: "/imagens/camisa_preta.webp"}
 ]
 
 app.set('view engine', 'ejs');
