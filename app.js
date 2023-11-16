@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-const produto = [
+const produtos = [
   {id: 1, nome: "Camisa Nike Preta", preco: "R$ 320", descricao: "Camisa bem boa", imagens: "/imagens/camisa_preta.webp"},
   {id: 2, nome: "Camisa Nike Vinho", preco: "R$ 220", descricao: "Camisa bem boa", imagens: "/imagens/camisa_vinho.webp"},
   {id: 3, nome: "Camisa Nike Azul", preco: "R$ 220", descricao: "Camisa bem boa", imagens: "/imagens/camisa_azul.webp"},
@@ -17,11 +17,17 @@ const produto = [
   {id: 12, nome: "Camisa Nike Preta", preco: "R$ 320", descricao: "Camisa bem boa", imagens: "/imagens/camisa_preta.webp"}
 ]
 
+function buscarProdutosPorID (id){
+  const produto = produtos.find(produto => produto.id == id)
+  return produto || null
+}
+
+
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.render('home', { message: 'Olá, Mundo!' });
+  res.render('home', { produtos });
 });
 
 app.get('/produto', (req, res) => {
