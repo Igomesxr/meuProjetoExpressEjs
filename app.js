@@ -13,8 +13,6 @@ const produtos = [
   {id: 8, nome: "Camisa Nike Preta", preco: "R$ 320", descricao: "Camisa bem boa", imagens: "/imagens/camisa_preta.webp"},
   {id: 9, nome: "Camisa Nike Vinho", preco: "R$ 220", descricao: "Camisa bem boa", imagens: "/imagens/camisa_vinho.webp"},
   {id: 10, nome: "Camisa Nike Azul", preco: "R$ 220", descricao: "Camisa bem boa", imagens: "/imagens/camisa_azul.webp"},
-  {id: 11, nome: "Camisa Nike Branca", preco: "R$ 450", descricao: "Camisa bem boa", imagens: "/imagens/camisa_branca.webp"},
-  {id: 12, nome: "Camisa Nike Preta", preco: "R$ 320", descricao: "Camisa bem boa", imagens: "/imagens/camisa_preta.webp"}
 ]
 
 function buscarProdutosPorID (id){
@@ -32,10 +30,6 @@ app.get('/', (req, res) => {
 
 app.get('/produto', (req, res) => {
   res.render('produto', { message: 'Olá, kjyuoyiu!' });
-});
-
-app.get('/teste', (req, res) => {
-  res.render('teste', { message: 'Olá, kjyuoyiu!' });
 });
 
 app.listen(port, () => {

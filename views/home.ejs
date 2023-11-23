@@ -14,91 +14,26 @@
   </header>
 
   
-  <% for(let produto of produtos){ %>
-  <h1>Gomes</h1>
-  <% } %>
 
   <!--Conteiner 1-->
   <div class="produtos">
-    <div class="produto"><a href="/produto"><img class="produto-img" src="/imagens/camisa_preta.webp" alt="Camisa Nike Preta"></a>
-      <h1 class="text">Camisa Nike Preta</h1>
-      <p class="descricao">Camisa bem boa</p>
-      <h2 class="text preco">R$ 320</h2>
+
+    <% for  (let produto of produtos) {%>
+
+    <div class="produto"><a href="/produto/<%= produto.id%>"><img class="produto-img" src="<%= produto.imagens%>" alt="Camisa Nike Preta"></a>
+      <h1 class="text"><%= produto.nome%></h1>
+      <p class="descricao"><%= produto.descricao%></p>
+      <h2 class="text preco"><%= produto.preco%></h2>
     </div>
 
-    <div  class="produto"><a href="/produto"><img class="produto-img" src="/imagens/camisa_vinho.webp" alt="Camisa Nike Vinho"></a>
-      <h1 class="text">Camisa Nike Vinho</h1>
-      <p class="descricao">Camisa bem boa</p>
-      <h2 class="text preco">R$ 200</h2>
-    </div>
-
-    <div  class="produto"><a href="/produto"><img class="produto-img" src="/imagens/camisa_azul.webp" alt="Camisa Nike Azul"></a>
-      <h1 class="text">Camisa Nike Azul</h1>
-      <p class="descricao">Camisa bem boa</p>
-      <p class="text preco">R$ 220</p>
-    </div>
-    
-    <div  class="produto"><a href="/produto"><img class="produto-img" src="/imagens/camisa_branca.webp" alt="Camisa Nike Azul"></a>
-      <h1 class="text">Camisa Nike Branca</h1>
-      <p class="descricao">Camisa bem boa</p>
-      <p class="text preco">R$ 450</p>
-    </div>
+     <% } %>
 
   </div>
+  
 
-  <!--Conteiner 2-->
-  <div class="produtos">
-    <div  class="produto"><a href="/produto"><img class="produto-img" src="/imagens/camisa_branca.webp" alt="Camisa Nike Azul"></a>
-     <h1 class="text">Camisa Nike Branca</h1>
-      <p class="descricao">Camisa bem boa</p>
-      <p class="text preco">R$ 450</p>
-   </div>
+  
 
-  <div  class="produto"><a href="/produto"><img class="produto-img" src="/imagens/camisa_azul.webp" alt="Camisa Nike Azul"></a>
-    <h1 class="text">Camisa Nike Azul</h1>
-    <p class="descricao">Camisa bem boa</p>
-    <p class="text preco">R$ 220</p>
-  </div>
 
-  <div  class="produto"><a href="/produto"><img class="produto-img" src="/imagens/camisa_vinho.webp" alt="Camisa Nike Vinho"></a>
-    <h1 class="text">Camisa Nike Vinho</h1>
-    <p class="descricao">Camisa bem boa</p>
-    <h2 class="text preco">R$ 200</h2>
-  </div>
-
-    <div class="produto"><a href="/produto"><img class="produto-img" src="/imagens/camisa_preta.webp" alt="Camisa Nike Preta"></a>
-      <h1 class="text">Camisa Nike Preta</h1>
-      <p class="descricao">Camisa bem boa</p>
-      <h2 class="text preco">R$ 320</h2>
-    </div>
-  </div>
-
-  <!--Conteiner 3-->
-  <div class="produtos">
-    <div  class="produto"><a href="/produto"><img class="produto-img" src="/imagens/camisa_vinho.webp" alt="Camisa Nike Vinho"></a>
-      <h1 class="text">Camisa Nike Vinho</h1>
-      <p class="descricao">Camisa bem boa</p>
-      <h2 class="text preco">R$ 200</h2>
-    </div>
-
-    <div  class="produto"><a href="/produto"><img class="produto-img" src="/imagens/camisa_azul.webp" alt="Camisa Nike Azul"></a>
-      <h1 class="text">Camisa Nike Azul</h1>
-      <p class="descricao">Camisa bem boa</p>
-      <p class="text preco">R$ 220</p>
-    </div>
-
-    <div  class="produto"><a href="/produto"><img class="produto-img" src="/imagens/camisa_branca.webp" alt="Camisa Nike Azul"></a>
-      <h1 class="text">Camisa Nike Branca</h1>
-       <p class="descricao">Camisa bem boa</p>
-       <p class="text preco">R$ 450</p>
-    </div>
-
-    <div class="produto"><a href="/produto"><img class="produto-img" src="/imagens/camisa_preta.webp" alt="Camisa Nike Preta"></a>
-      <h1 class="text">Camisa Nike Preta</h1>
-      <p class="descricao">Camisa bem boa</p>
-      <h2 class="text preco">R$ 320</h2>
-    </div>
-  </div>
 
   <footer>
     <h1>Compre sempre aqui!</h1>

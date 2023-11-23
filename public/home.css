@@ -26,18 +26,18 @@ header h1{
 }
 
 .produtos{
-    display: flex;
-    justify-content: space-around;
+    display:flex;
+    justify-content: space-evenly;
     padding: 40px 0px;
     flex-wrap: wrap;
-    
 }
 
 .produto{
     background-color: #fff;
     border-radius: 5px;    
     box-shadow: 0 2px 5px rgb(92, 92, 92);
-    height: 400px;     
+    height: 400px;  
+    width: 300px;   
     margin: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;  
